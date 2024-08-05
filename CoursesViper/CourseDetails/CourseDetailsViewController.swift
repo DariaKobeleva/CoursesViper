@@ -10,12 +10,15 @@ import UIKit
 protocol CourseDetailsViewInputProtocol: AnyObject {
     func displayCourseName(with tittle: String)
     func displayNumberOfLessons(with tittle: String)
-    func displayNumberOfTest(with tittle: String)
+    func displayNumberOfTests(with tittle: String)
+    func displayImage(with imageData: Data)
+    func displayImageFavoriteButton(with status: Bool)
 }
 
 protocol CourseDetailsViewOutputProtocol {
     init(view: CourseDetailsViewInputProtocol)
     func showDetails()
+    func favoriteButtonPressed()
 }
 
 class CourseDetailsViewController: UIViewController {
@@ -30,44 +33,18 @@ class CourseDetailsViewController: UIViewController {
     var presenter: CourseDetailsViewOutputProtocol!
     var configurator: CourseDetailsConfiguratorInputProtocol = CourseDetailsIConfigurator()
     
-    private var isFavorite = false
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         configurator.configure(with: self, and: course)
-        loadFavoriteStatus()
-        setupUI()
         presenter.showDetails()
     }
     
     @IBAction func toggleFavorite() {
-        isFavorite.toggle()
-        setStatusForFavoriteButton()
-        DataManager.shared.setFavoriteStatus(for: course.name, with: isFavorite)
-        
-    }
-    
-    private func setupUI() {
-        numberOfLessonsLabel.text = "Number of lessons: \(course.numberOfLessons)"
-        numberOfTestsLabel.text = "Number of tests: \(course.numberOfTests)"
-        
-        if let imageData = ImageManager.shared.fetchImageData(from: course.imageUrl) {
-            courseImage.image = UIImage(data: imageData)
-        }
-        setStatusForFavoriteButton()
-    }
-    
-    private func setStatusForFavoriteButton() {
-        favoriteButton.tintColor = isFavorite ? .red : .gray
-    }
-    
-    private func loadFavoriteStatus() {
-        isFavorite = DataManager.shared.getFavoriteStatus(for: course.name)
+        presenter.favoriteButtonPressed()
     }
 }
 
 //MARK: - CourseDetailsViewInputProtocol
-
 extension CourseDetailsViewController: CourseDetailsViewInputProtocol {
     func displayCourseName(with tittle: String) {
         courseNameLabel.text = tittle
@@ -76,7 +53,15 @@ extension CourseDetailsViewController: CourseDetailsViewInputProtocol {
         numberOfLessonsLabel.text = tittle
     }
     
-    func displayNumberOfTest(with tittle: String) {
+    func displayNumberOfTests(with tittle: String) {
         numberOfTestsLabel.text = tittle
+    }
+    
+    func displayImage(with imageData: Data) {
+        courseImage.image = UIImage(data: imageData)
+    }
+    
+    func displayImageFavoriteButton(with status: Bool) {
+        favoriteButton.tintColor = status ? .red : .gray
     }
 }

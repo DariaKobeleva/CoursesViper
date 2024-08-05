@@ -20,6 +20,13 @@
 		20B660592C5D33760033C4B2 /* CourseDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B660582C5D33760033C4B2 /* CourseDetailsInteractor.swift */; };
 		20B6605B2C5D37440033C4B2 /* CourseDetailsIConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B6605A2C5D37440033C4B2 /* CourseDetailsIConfigurator.swift */; };
 		20B660612C5E41360033C4B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20B660602C5E41360033C4B2 /* Main.storyboard */; };
+		20B660632C5E44750033C4B2 /* CourseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B660622C5E44750033C4B2 /* CourseListViewController.swift */; };
+		20B660662C5E5C4B0033C4B2 /* CourseListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B660652C5E5C4B0033C4B2 /* CourseListPresenter.swift */; };
+		20B660682C5E5C5A0033C4B2 /* CourseListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B660672C5E5C5A0033C4B2 /* CourseListInteractor.swift */; };
+		20B6606A2C5E5C6C0033C4B2 /* CourseListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B660692C5E5C6C0033C4B2 /* CourseListConfigurator.swift */; };
+		20B6606C2C5E62660033C4B2 /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B6606B2C5E62660033C4B2 /* CourseCell.swift */; };
+		20B6606E2C5E627C0033C4B2 /* CourseCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B6606D2C5E627C0033C4B2 /* CourseCellViewModel.swift */; };
+		20B660712C5E63E40033C4B2 /* CourseListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B660702C5E63E40033C4B2 /* CourseListRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +45,13 @@
 		20B660582C5D33760033C4B2 /* CourseDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailsInteractor.swift; sourceTree = "<group>"; };
 		20B6605A2C5D37440033C4B2 /* CourseDetailsIConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailsIConfigurator.swift; sourceTree = "<group>"; };
 		20B660602C5E41360033C4B2 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		20B660622C5E44750033C4B2 /* CourseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListViewController.swift; sourceTree = "<group>"; };
+		20B660652C5E5C4B0033C4B2 /* CourseListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListPresenter.swift; sourceTree = "<group>"; };
+		20B660672C5E5C5A0033C4B2 /* CourseListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListInteractor.swift; sourceTree = "<group>"; };
+		20B660692C5E5C6C0033C4B2 /* CourseListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListConfigurator.swift; sourceTree = "<group>"; };
+		20B6606B2C5E62660033C4B2 /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
+		20B6606D2C5E627C0033C4B2 /* CourseCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCellViewModel.swift; sourceTree = "<group>"; };
+		20B660702C5E63E40033C4B2 /* CourseListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +85,10 @@
 			isa = PBXGroup;
 			children = (
 				20B6603A2C5D278F0033C4B2 /* AppDelegate.swift */,
-				20B6603C2C5D278F0033C4B2 /* SceneDelegate.swift */,
 				20B660482C5D27920033C4B2 /* Info.plist */,
+				20B6603C2C5D278F0033C4B2 /* SceneDelegate.swift */,
+				20B6606F2C5E62920033C4B2 /* CourseCell */,
+				20B660642C5E447F0033C4B2 /* CourseList */,
 				20B6605C2C5E3F770033C4B2 /* CourseDetails */,
 				20B6605D2C5E40210033C4B2 /* Model */,
 				20B6605E2C5E40290033C4B2 /* Services */,
@@ -118,6 +134,27 @@
 				20B660602C5E41360033C4B2 /* Main.storyboard */,
 			);
 			path = Storyaboard;
+			sourceTree = "<group>";
+		};
+		20B660642C5E447F0033C4B2 /* CourseList */ = {
+			isa = PBXGroup;
+			children = (
+				20B660622C5E44750033C4B2 /* CourseListViewController.swift */,
+				20B660652C5E5C4B0033C4B2 /* CourseListPresenter.swift */,
+				20B660672C5E5C5A0033C4B2 /* CourseListInteractor.swift */,
+				20B660692C5E5C6C0033C4B2 /* CourseListConfigurator.swift */,
+				20B660702C5E63E40033C4B2 /* CourseListRouter.swift */,
+			);
+			path = CourseList;
+			sourceTree = "<group>";
+		};
+		20B6606F2C5E62920033C4B2 /* CourseCell */ = {
+			isa = PBXGroup;
+			children = (
+				20B6606B2C5E62660033C4B2 /* CourseCell.swift */,
+				20B6606D2C5E627C0033C4B2 /* CourseCellViewModel.swift */,
+			);
+			path = CourseCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,13 +229,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				20B6604F2C5D295C0033C4B2 /* Course.swift in Sources */,
+				20B6606E2C5E627C0033C4B2 /* CourseCellViewModel.swift in Sources */,
 				20B660512C5D2C190033C4B2 /* DataManager.swift in Sources */,
+				20B660632C5E44750033C4B2 /* CourseListViewController.swift in Sources */,
+				20B660712C5E63E40033C4B2 /* CourseListRouter.swift in Sources */,
+				20B6606A2C5E5C6C0033C4B2 /* CourseListConfigurator.swift in Sources */,
 				20B6603F2C5D278F0033C4B2 /* CourseDetailsViewController.swift in Sources */,
 				20B660552C5D2E910033C4B2 /* NetworkManager.swift in Sources */,
 				20B660532C5D2E420033C4B2 /* ImageManager.swift in Sources */,
 				20B6603B2C5D278F0033C4B2 /* AppDelegate.swift in Sources */,
 				20B6605B2C5D37440033C4B2 /* CourseDetailsIConfigurator.swift in Sources */,
+				20B6606C2C5E62660033C4B2 /* CourseCell.swift in Sources */,
+				20B660682C5E5C5A0033C4B2 /* CourseListInteractor.swift in Sources */,
 				20B660572C5D32300033C4B2 /* CourseDetailsPresenter.swift in Sources */,
+				20B660662C5E5C4B0033C4B2 /* CourseListPresenter.swift in Sources */,
 				20B660592C5D33760033C4B2 /* CourseDetailsInteractor.swift in Sources */,
 				20B6603D2C5D278F0033C4B2 /* SceneDelegate.swift in Sources */,
 			);
