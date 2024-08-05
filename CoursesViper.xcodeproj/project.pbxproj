@@ -18,7 +18,7 @@
 		20B660552C5D2E910033C4B2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B660542C5D2E910033C4B2 /* NetworkManager.swift */; };
 		20B660572C5D32300033C4B2 /* CourseDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B660562C5D32300033C4B2 /* CourseDetailsPresenter.swift */; };
 		20B660592C5D33760033C4B2 /* CourseDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B660582C5D33760033C4B2 /* CourseDetailsInteractor.swift */; };
-		20B6605B2C5D37440033C4B2 /* CourseDetailsIConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B6605A2C5D37440033C4B2 /* CourseDetailsIConfigurator.swift */; };
+		20B6605B2C5D37440033C4B2 /* CourseDetailsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B6605A2C5D37440033C4B2 /* CourseDetailsConfigurator.swift */; };
 		20B660612C5E41360033C4B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20B660602C5E41360033C4B2 /* Main.storyboard */; };
 		20B660632C5E44750033C4B2 /* CourseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B660622C5E44750033C4B2 /* CourseListViewController.swift */; };
 		20B660662C5E5C4B0033C4B2 /* CourseListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B660652C5E5C4B0033C4B2 /* CourseListPresenter.swift */; };
@@ -43,7 +43,7 @@
 		20B660542C5D2E910033C4B2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		20B660562C5D32300033C4B2 /* CourseDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailsPresenter.swift; sourceTree = "<group>"; };
 		20B660582C5D33760033C4B2 /* CourseDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailsInteractor.swift; sourceTree = "<group>"; };
-		20B6605A2C5D37440033C4B2 /* CourseDetailsIConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailsIConfigurator.swift; sourceTree = "<group>"; };
+		20B6605A2C5D37440033C4B2 /* CourseDetailsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailsConfigurator.swift; sourceTree = "<group>"; };
 		20B660602C5E41360033C4B2 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		20B660622C5E44750033C4B2 /* CourseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListViewController.swift; sourceTree = "<group>"; };
 		20B660652C5E5C4B0033C4B2 /* CourseListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListPresenter.swift; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 				20B6603E2C5D278F0033C4B2 /* CourseDetailsViewController.swift */,
 				20B660562C5D32300033C4B2 /* CourseDetailsPresenter.swift */,
 				20B660582C5D33760033C4B2 /* CourseDetailsInteractor.swift */,
-				20B6605A2C5D37440033C4B2 /* CourseDetailsIConfigurator.swift */,
+				20B6605A2C5D37440033C4B2 /* CourseDetailsConfigurator.swift */,
 			);
 			path = CourseDetails;
 			sourceTree = "<group>";
@@ -238,7 +238,7 @@
 				20B660552C5D2E910033C4B2 /* NetworkManager.swift in Sources */,
 				20B660532C5D2E420033C4B2 /* ImageManager.swift in Sources */,
 				20B6603B2C5D278F0033C4B2 /* AppDelegate.swift in Sources */,
-				20B6605B2C5D37440033C4B2 /* CourseDetailsIConfigurator.swift in Sources */,
+				20B6605B2C5D37440033C4B2 /* CourseDetailsConfigurator.swift in Sources */,
 				20B6606C2C5E62660033C4B2 /* CourseCell.swift in Sources */,
 				20B660682C5E5C5A0033C4B2 /* CourseListInteractor.swift in Sources */,
 				20B660572C5D32300033C4B2 /* CourseDetailsPresenter.swift in Sources */,
